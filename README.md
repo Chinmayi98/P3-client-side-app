@@ -12,3 +12,10 @@ Used [Ajax](https://github.com/profcase/js-gui-ajax)
 - [json place holder](https://jsonplaceholder.typicode.com/)
 
 Created [Favicon](https://favicon.io/)
+
+## People who helped me with this assignment
+
+- Bhavya Deepthi
+- Sai Jyothsna
+- Prudhvi Raju
+- Maha Lakshmi Kongari
