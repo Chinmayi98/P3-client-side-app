@@ -1,0 +1,2 @@
+Hey!!
+You called a Ajax method!

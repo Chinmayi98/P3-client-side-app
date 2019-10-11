@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Resume - Start Bootstrap Theme</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/resume.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">Clarence Taylor</span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="https://raw.githubusercontent.com/Chinmayi98/web-stuff/master/DSC_2137.jpg" alt="Pic" width="180" height="250">
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="Application.html">Application</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="contact.html">Contact</a>
+        </li>
+       
+        
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid p-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+      <div class="w-100">
+        <h1 class="mb-0">Chinmayi
+          <span class="text-primary">Ambati</span>
+        </h1>
+        
+    <aside>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/chinmayi-a-297a43a1/">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/Chinmayi98">
+            <i class="fab fa-github"></i>
+          </a>
+          
+          <a href="https://www.facebook.com/ambati.chinmayi">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
+      </div>
+    </aside>
+    </section>
+    <hr class="m-0">
+
+    
+    
+    </div>
+  </nav>
+ 
+  <h2>Storage Estimator!</h2>
+  <hr>
+
+  <fieldset class="mt-4">
+    <label for="firstInput">Items:</label>
+    <input id="firstInput" type="number" min="1" max="1000" value="12">
+    <span id="firstWarning" class="text-danger"></span>
+  </fieldset>
+
+  <fieldset class="mt-4">
+    <label for="secondInput">Size Each:</label>
+    <input id="secondInput" type="number" min="1" max="1000" value="45">
+    <span id="secondWarning" class="text-danger"></span>
+  </fieldset>
+
+
+<!--end column 1-->
+<hr>
+<hr>
+<!--column 2 (5/12) -->
+<div class="col-md-5 mb-4">
+  <button id="addButton" class="btn btn-primary" onclick=updateWithAdd()>Estimate</button>
+  <button id="wiper" class="btn btn-danger" >Clear</button>
+  <button id="getJokeButton" class="btn btn-success">Fetch Joke</button>
+  <button id="getDataButton" class="btn btn-warning">Get Todos</button>
+  <hr>
+  <p id="result"></p>
+
+  <div class="col-md-4 mb-4">
+    <h3>To-do List</h3>
+    <h4>(Appears at the left)</h4>
+    <hr>
+    <ol>
+    </ol>
+  </div>
+</div>
+<!-- end column 2-->
+
+<!--</div>
+ end row 1 -->
+ <div id="demo">
+  <h3>AJAX</h3>
+  <button type="button" onclick="loadDoc()">Change Content</button>
+  </div>
+  
+  <script>
+  function loadDoc() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("demo").innerHTML =
+        this.responseText;
+      }
+    };
+    xhttp.open("GET", "ajax.txt", true);
+    xhttp.send();
+  }
+  </script>
+
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template-->
+  <script src="js/resume.min.js"></script>
+  <script src="main.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="fetch-joke.js"></script>
+  <script src="axios-data.js"></script>
+  <script src="main.test.js"></script>
+        <footer id="b">
+           <!-- sticky footer with padding on y-axis (top and bottom) -->
+  <footer class="footer mt-auto py-3 bg-light">
+      <div class="container">
+        <span class="text-muted">Right-click / Inspect / Console</span>
+        &#9670;
+        <span class="text-muted"><a href="file:///C:/Users/S536844/Desktop/p3-clientside-app/quint.html">View Tests</a></span>
+        &#9670;
+        <a href="https://chinmayi98.github.io/p2-styled-site/">Demo</a>
+        &#9670;
+        <a href="https://github.com/Chinmayi98/p2-styled-site">Source</a>
+      </div>
+    </footer>
+           &copy; Chinmayi Ambati 
+       </footer>
+
+                </body>
+                </html>
